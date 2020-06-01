@@ -8,10 +8,9 @@ function generatePassword(){
   let password="";
   
   
-  var pLength = parseInt(prompt("Pick a password length between 8 and 128"));
-  if(pLength<8 || pLength>128){
+  let pLength = parseInt(prompt("Pick a password length between 8 and 128"));
+  if(pLength<8 || pLength>128 || isNaN(pLength)){
     alert("You need to enter a number between 8 and 128");
-    generatePassword();
 
   }else{
     var Lcase = confirm("Do you want the password to contain Lower case?");
@@ -30,7 +29,7 @@ function generatePassword(){
     }
     if(!num&&!Lcase&&!Ucase&&!sLetters){
       alert("You need to select a password criteria")
-      generatePassword();
+      
     }
 
     while(0!=pLength){
@@ -38,7 +37,7 @@ function generatePassword(){
       pLength = pLength-1;
     }
   }
-  
+
   return password;
 }
 
