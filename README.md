@@ -15,7 +15,7 @@ SO THAT I can create a strong password that provides greater security
 - Input a valid password length and then select at least 1 password criteria from the options
 - Random password will be shown in the textarea
 
-## SCreenshot
+## Screenshot
 The following image is a screnshot of the working generator:
 
 ![password generator demo](./Assets/img1.png)
